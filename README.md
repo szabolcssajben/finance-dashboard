@@ -12,7 +12,7 @@ A personal finance dashboard that ingests transactions from a Google Sheet (via 
   * (Optional) Database: SQLite / PostgreSQL
 * **Frontend**: React + Vite
 
-  * Styling: SCSS modules
+  * Styling: Sass (SCSS)
   * Charts: Recharts (or your preferred charting library)
 
 ## Features
@@ -43,7 +43,7 @@ A personal finance dashboard that ingests transactions from a Google Sheet (via 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/finance-dashboard.git
+git clone https://github.com/szabolcssajben/finance-dashboard.git
 cd finance-dashboard
 ```
 
@@ -168,7 +168,7 @@ You can start both backend and frontend with one command:
 
 ## License
 
-MIT © Your Name
+MIT © Szabolcs Sajben
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
@@ -179,7 +179,7 @@ MIT © Your Name
 - 📦 Asset bundling and optimization
 - 🔄 Data loading and mutations
 - 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
+- 🎉 Styled with Sass (SCSS)
 - 📖 [React Router docs](https://reactrouter.com/)
 
 ## Getting Started
@@ -248,7 +248,7 @@ Make sure to deploy the output of `pnpm run build`
 
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+This project uses Sass (SCSS) for styling. Global styles live in `app/app.scss`, and you can create modular `.scss` files alongside components for scoped styles.
 
 ---
 

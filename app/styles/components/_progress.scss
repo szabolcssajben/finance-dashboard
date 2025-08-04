@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+// Progress bar component
+.progress {
+    width: 100%;
+    background-color: $color-gray-200;
+    border-radius: $border-radius-full;
+    height: $spacing-2;
+    margin-top: $spacing-2;
+
+    &__bar {
+        background-color: $color-blue-600;
+        height: 100%;
+        border-radius: $border-radius-full;
+        transition: width 0.3s ease;
+    }
+}

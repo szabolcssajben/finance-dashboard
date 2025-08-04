@@ -1,0 +1,26 @@
+/* Global SCSS styles */
+
+// Import variables
+@use './styles/variables' as *;
+
+// Import layout components
+@use './styles/layout/container';
+@use './styles/layout/wrapper';
+@use './styles/layout/header';
+@use './styles/layout/grid';
+
+// Import UI components
+@use './styles/components/card';
+@use './styles/components/progress';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
+
+// Base styles
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: $color-gray-50;
+    color: $color-gray-900;
+}
