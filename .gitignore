@@ -4,3 +4,10 @@
 # React Router
 /.react-router/
 /build/
+
+# Go
+backend/tmp/*.log
+.env
+
+service-account.json
+tmp/main
