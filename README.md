@@ -166,6 +166,39 @@ You can start both backend and frontend with one command:
 * PDF/Email report generation
 * Mobile-friendly UI or native mobile app
 
+## TODO
+
+### Backend
+- [ ] Implement Google Sheets data fetching in `backend/sheets/client.go`
+- [ ] Parse transaction data from sheet format to models
+- [ ] Implement weekly trends calculation in `backend/services/analytics.go`
+- [ ] Repeat transactions: sliding-window clustering on "payee + amount ±5%" over the last 6–12 months
+- [ ] Subscriptions: flag those clusters that recur at regular intervals (monthly, quarterly)
+- [ ] High-spend areas: sort total spend by merchant category or payee, return top N
+- [ ] Savings goals: store user targets (e.g. "£5,000 by December 2025"), project forward based on average net savings per week
+- [ ] Listen for sheet "push" notifications via Apps Script → Pub/Sub → Go service for near-real-time updates
+- [ ] Add Redis for caching
+- [ ] Create additional API endpoints for categories and merchants
+- [ ] Add error handling and logging
+- [ ] Write unit tests for services and handlers
+- [ ] Add data validation for API responses
+- [ ] Implement subscriptions detection algorithms
+- [ ] Build goal projections system
+
+### Frontend
+- [ ] Implement API data fetching with React hooks
+- [ ] Build interactive charts using Recharts
+- [ ] Add loading states and error handling
+- [ ] Create transaction list component
+- [ ] Implement category filtering and search
+- [ ] Add date range picker for filtering
+- [ ] Build responsive mobile layout
+- [ ] Add dark mode support
+- [ ] Implement data refresh functionality
+- [ ] Frontend animations: smooth transitions and micro-interactions
+- [ ] Japanese language support: i18n with language switcher
+- [ ] Accessibility pass: ARIA labels, keyboard navigation, screen reader support
+
 ## License
 
 MIT © Szabolcs Sajben
